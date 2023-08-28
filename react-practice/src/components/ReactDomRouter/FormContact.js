@@ -2,7 +2,7 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 
-function Bai1() {
+function FormContact() {
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -57,4 +57,4 @@ function Bai1() {
     );
 }
 
-export default Bai1;
+export default FormContact;
