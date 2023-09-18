@@ -11,8 +11,8 @@ function FormMedical() {
         national: "",
         company: "",
         city: "",
+        status: "",
         quarter: "",
-        city: "",
         district: "",
         wards: "",
         house: "",
@@ -83,7 +83,7 @@ function FormMedical() {
                     </div>
                     <div>
                         <label>Có thể bảo hiển y tế </label>
-                        <Field type="checkbox" />
+                        <Field type="checkbox" name="status" />
                     </div>
 
                     <h2>Địa chỉ liên lạc tại Việt Nam</h2>
