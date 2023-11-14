@@ -1,19 +1,19 @@
-import { useRef, useState } from "react";
-import Student from "./components/student/Student";
+import { useRef, useState } from 'react';
+import Student from './components/student/Student';
 
 function App() {
-    const [name, setName] = useState("");
-    const [phone, setPhone] = useState("");
-    const [email, setEmail] = useState("");
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
     const [students, setStudents] = useState([]);
 
     const nameRef = useRef();
 
     const handleSubmit = () => {
         setStudents((prev) => [...prev, { ...prev, name, phone, email }]);
-        setName("");
-        setPhone("");
-        setEmail("");
+        setName('');
+        setPhone('');
+        setEmail('');
         nameRef.current.focus();
     };
 
